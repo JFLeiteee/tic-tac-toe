@@ -1,0 +1,102 @@
+/* GERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* GLOBAL CONTAINER */
+.main-container {
+  max-height: 100svh;
+  height: 100svh;
+  max-width: 100vw;
+  color: #fff;
+  background-color: #222222;
+  padding: min(10%, 18%) 2.5rem;
+  position: relative;
+}
+
+/* NEW GAME SCREEN (FIRST SCREEN) */
+.new-game-container {
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.game-title { 
+  font-size: 10vmin;
+  margin-bottom: 3rem;
+}
+
+.new-game-button {
+  cursor: pointer;
+  height: 2rem;
+  width: 7rem;
+  border: none;
+  outline: none;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+}
+
+.new-game-button:hover {
+  opacity: 0.8;
+}
+
+/* SCORE */
+.score-container {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* TIC TAC TOE */
+.tic {
+  width: 100%;
+  max-width: 25rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 33.25% 33.25% 33%;
+  grid-template-rows: 10rem 10rem 10rem;
+}
+
+.block {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.block:hover {
+  background-color: #ffffff05;
+}
+
+#one, #four {
+  border-bottom: .5rem solid #383838;
+  border-right: .5rem solid #383838;
+}
+
+#two, #five {
+  border-bottom: .5rem solid #383838;
+  border-right: .5rem solid #383838;
+}
+
+#three, #six {
+  border-bottom: .5rem solid #383838;
+  border-left: .5rem solid #383838;
+}
+
+#seven {
+  border-right: .5rem solid #383838;
+}
+
+#eight {
+  border-right: .5rem solid #383838;
+}
